@@ -1,0 +1,27 @@
+<div class="burger-item" ng-switch on="item" ng-style="{ 'z-index': (collection.length - $index) }">
+	<div ng-switch-when="Bun" class="burger-item-bun" ng-class="{ 'top': $first, 'mid': $middle, 'bot': $last }"></div>
+	
+	<div ng-switch-when="Patty" class="burger-item-patty"></div>
+
+	<div ng-switch-when="Cheese" class="burger-item-cheese" ng-style="{ 'z-index': (collection.length - $index) }">
+		<div ng-class="{ 'left-triangle': $odd, 'right-triangle': $even }" ></div>
+	</div>
+
+	<div ng-switch-when="Tomato" class="burger-item-tomato"></div>
+
+	<div ng-switch-when="Coleslaw" class="burger-item-coleslaw" ng-style="{ 'z-index': (collection.length - $index) }">
+		<div class="triangle t-1"></div>
+		<div class="triangle t-2"></div>
+		<div class="triangle t-3"></div>
+		<div class="triangle t-4"></div>
+		<div class="triangle t-5"></div>
+		<div class="triangle t-6"></div>
+		<div class="triangle t-7"></div>
+		<div class="triangle t-8"></div>
+		<div class="triangle t-9"></div>
+		<div class="triangle t-10"></div>
+		<div class="triangle t-mid"></div>
+	</div>
+
+	<div ng-switch-when="Onion" class="burger-item-onion"></div>
+</div>

@@ -1,0 +1,295 @@
+.burger-page .panel-heading {
+  background-color: #3676c3;
+  color: #e6ffff;
+  font-weight: bold;
+}
+
+.selected-preset-name {
+  color: #80edf9;
+}
+
+.burger-preview-body {
+  background-color: #8ba6c5;
+}
+
+.burger-item-row {
+  line-height: 0;
+}
+
+.burger-item {
+  display: inline-block;
+}
+
+.burger-item-bun {
+  border: 2px solid #ca8853;
+  background-color: #f3bd87;
+  width: 300px;
+}
+.burger-container.thumbnail .burger-item-bun {
+  width: 100px;
+}
+
+.burger-item-bun.top {
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 65px;
+}
+.burger-container.thumbnail .burger-item-bun.top {
+  height: 32px;
+}
+
+.burger-item-bun.mid {
+  border-radius: 7px;
+  height: 25px;
+}
+.burger-container.thumbnail .burger-item-bun.mid {
+  height: 12px;
+}
+
+.burger-item-bun.bot {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 40px;
+}
+.burger-container.thumbnail .burger-item-bun.bot {
+  height: 20px;
+}
+
+.burger-item-patty {
+  border: 2px solid #877;
+  border-radius: 15px;
+  background-color: #695a5a;
+  height: 30px;
+  width: 320px;
+}
+.burger-container.thumbnail .burger-item-patty {
+  height: 15px;
+  width: 110px;
+}
+
+.burger-item-cheese {
+  border-top: 4px solid #f1d41d;
+  border-radius: 5px;
+  background-color: #eeef33;
+  height: 10px;
+  width: 300px;
+  position: relative;
+}
+.burger-container.thumbnail .burger-item-cheese {
+  height: 5px;
+  width: 100px;
+}
+
+.burger-item-cheese .left-triangle {
+  border-left: 20px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 27px solid #ffd930;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -4px;
+  left: -7px;
+}
+.burger-container.thumbnail .burger-item-cheese .left-triangle {
+  border-top: 13px solid #ffd930;
+}
+
+.burger-item-cheese .right-triangle {
+  border-left: 50px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 27px solid #ffd930;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -4px;
+  right: -7px;
+}
+
+.burger-item-tomato {
+  border: 2px solid #fb7d40;
+  border-radius: 3px;
+  background-color: #f1631d;
+  height: 10px;
+  width: 300px;
+}
+.burger-container.thumbnail .burger-item-tomato {
+  height: 5px;
+  width: 100px;
+}
+
+.burger-item-coleslaw {
+  border-top: 4px solid #1bc347;
+  border-radius: 5px;
+  background-color: #0e7d2b;
+  height: 10px;
+  width: 300px;
+  position: relative;
+}
+.burger-container.thumbnail .burger-item-coleslaw {
+  height: 5px;
+  width: 100px;
+}
+
+.burger-item-coleslaw .triangle {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.burger-item-coleslaw .triangle.t-1 {
+  border-left: 6px solid transparent;
+  border-right: 23px solid transparent;
+  border-top: 15px solid #0fde46;
+  top: -4px;
+  left: -7px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-1 {
+  border-top-width: 7px;
+}
+
+.burger-item-coleslaw .triangle.t-2 {
+  border-left: 24px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #20bb49;
+  top: -4px;
+  left: 15px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-2 {
+  border-top-width: 7px;
+}
+
+.burger-item-coleslaw .triangle.t-3 {
+  border-left: 26px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 9px solid #40ea6d;
+  top: -4px;
+  left: 28px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-3 {
+  border-top-width: 4px;
+}
+
+.burger-item-coleslaw .triangle.t-4 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid #0fde46;
+  top: -4px;
+  left: 75px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-4 {
+  display: none;
+}
+
+.burger-item-coleslaw .triangle.t-5 {
+  border-left: 26px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 9px solid #40ea6d;
+  top: -4px;
+  left: 93px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-5 {
+  display: none;
+}
+
+.burger-item-coleslaw .triangle.t-6 {
+  border-left: 23px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 15px solid #0fde46;
+  top: -4px;
+  right: -7px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-6 {
+  border-top-width: 7px;
+}
+
+.burger-item-coleslaw .triangle.t-7 {
+  border-left: 15px solid transparent;
+  border-right: 24px solid transparent;
+  border-top: 15px solid #20bb49;
+  top: -4px;
+  right: 15px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-7 {
+  border-top-width: 7px;
+}
+
+.burger-item-coleslaw .triangle.t-8 {
+  border-left: 3px solid transparent;
+  border-right: 26px solid transparent;
+  border-top: 9px solid #40ea6d;
+  top: -4px;
+  right: 28px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-8 {
+  border-top-width: 4px;
+}
+
+.burger-item-coleslaw .triangle.t-9 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid #0fde46;
+  top: -4px;
+  right: 75px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-9 {
+  display: none;
+}
+
+.burger-item-coleslaw .triangle.t-10 {
+  border-left: 3px solid transparent;
+  border-right: 26px solid transparent;
+  border-top: 9px solid #40ea6d;
+  top: -4px;
+  right: 93px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-10 {
+  display: none;
+}
+
+.burger-item-coleslaw .triangle.t-mid {
+  border-left: 3px solid transparent;
+  border-right: 26px solid transparent;
+  border-top: 9px solid #03f343;
+  top: -4px;
+  left: 136px;
+}
+.burger-container.thumbnail .burger-item-coleslaw .triangle.t-mid {
+  left: 50px;
+}
+
+.burger-item-onion {
+  border: 2px dotted #b950ff;
+  border-radius: 3px;
+  background-color: #8312ce;
+  height: 7px;
+  width: 280px;
+}
+.burger-container.thumbnail .burger-item-onion {
+  height: 5px;
+  width: 100px;
+}
+
+.burger-page .presets-choices .panel-heading {
+  background-color: #ccdff7;
+  color: #247fea !important;
+}
+
+.burger-page .presets-choices .preset-thumbnail-choice {
+  cursor: pointer;
+}
+
+.burger-page .presets-choices .custom-preset-thumbnail {
+  color: #ccdff7;
+  font-size: 50px;
+}
+
+.clear-stack-icon {
+  cursor: pointer;
+}
+.clear-stack-icon:hover {
+  color: #ffaf7f;
+}

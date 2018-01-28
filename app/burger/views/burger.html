@@ -1,0 +1,142 @@
+<div ng-controller="BurgerController as ctrl" class="container burger-page">
+
+	<div class="page-header">
+		<h1>Simple Burger Stacker App <small>Create your own!</small></h1>
+	</div>
+
+	<div class="alert alert-info" role="alert">
+		<strong>Yummy!</strong> Try out and add the ingridents into the stack and see the results :)
+	</div>
+
+	<div class="row">
+
+	</div>
+
+	<div class="row">
+		<!-- Burger Preview Panel -->
+		<div class="col-xs-12">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Your Burger Preview: <span class="selected-preset-name"> {{ ctrl.selectedPresetName }}</span></div>
+				<div class="panel-body burger-preview-body">
+					<div class="burger-container">
+						<div class="burger-stack text-center">
+							<div class="row burger-item-row" ng-repeat="item in ctrl.stack.slice().reverse() as collection track by $index">
+								<burger-item></burger-item>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="row">
+		<!-- Burger Ingredients Panel -->
+		<div class="col-xs-12 col-sm-12 col-md-6">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Ingredients</div>
+				<div class="panel-body">
+					<div class="list-group">
+
+						<div class="list-group-item" ng-repeat="ingr in ctrl.ingredients">
+							<div class="row">
+								<div class="col-xs-10">
+									<h4 class="list-group-item-heading"><strong>{{ ingr.name }}</strong></h4>
+									<p class="list-group-item-text">{{ ingr.description }}</p>
+								</div>
+								<div class="col-xs-2">
+									<button type="button" class="btn btn-default" ng-click="ctrl.addToStack(ingr.name)">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+				
+		</div>
+
+		<!-- Burger Stack Panel -->
+		<div class="col-xs-12 col-sm-12 col-md-6">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-10">Stack</div>
+						<div class="col-xs-2 text-right">
+							<span class="glyphicon glyphicon-trash clear-stack-icon" ng-click="ctrl.clearStack()"></span>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="list-group">
+
+						<div class="list-group-item" ng-repeat="item in ctrl.stack.slice().reverse() track by $index">
+							<div class="row">
+								<div class="col-xs-10">
+									<h4 class="list-group-item-heading">{{ item }}</h4>
+								</div>
+								<div class="col-xs-2">
+									<button type="button" class="btn btn-default" ng-click="ctrl.removeFromStack($index)">
+										<span class="glyphicon glyphicon-minus"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="row">
+
+		<!-- Burger Presets Panel -->
+		<div class="col-xs-12">
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Burger Presets</div>
+				<div class="panel-body">
+					<div class="row presets-choices">
+						
+						<div class="col-xs-6 col-sm-4" ng-repeat="preset in ctrl.presets track by $index">
+							<div class="panel panel-default preset-thumbnail-choice" ng-click="ctrl.presetSelected(preset)">
+								<div class="panel-heading">{{ preset.name }}</div>
+								<div class="panel-body">
+
+									<div class="burger-container thumbnail">
+										<div class="burger-stack text-center">
+											<div class="row burger-item-row" ng-repeat="item in preset.contents.slice().reverse() as collection track by $index">
+												<burger-item></burger-item>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-sm-4">
+							<div class="panel panel-default preset-thumbnail-choice" ng-click="ctrl.clearStack()">
+								<div class="panel-heading">Custom</div>
+								<div class="panel-body text-center">
+
+									<div class="custom-preset-thumbnail glyphicon glyphicon-star-empty"></div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+</div>
